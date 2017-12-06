@@ -27,7 +27,7 @@ with(powCons,{
         plot(Date_Time,Sub_metering_2,type = "l", ylab = "", xlab = "", col = "red", ylim = range(c(Sub_metering_1,Sub_metering_2,Sub_metering_3)))
         par(new = TRUE)
         plot(Date_Time,Sub_metering_3,type = "l", ylab = "", xlab = "", col = "blue", ylim = range(c(Sub_metering_1,Sub_metering_2,Sub_metering_3)))
-        legend("topright", lty = 1, col = c("black","red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), inset = 0.1, adj = c(0, 0.5), cex = 0.8, bty = "n")
+        legend("topright", lty = c(1,1,1), col = c("black","red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), inset = 0.1, adj = c(0, 0.5), cex = 0.8)
 
 })
 dev.copy(png, file = "plot3.png")
